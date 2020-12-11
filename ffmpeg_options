@@ -1,0 +1,5 @@
+--enable-rkmpp
+--enable-nonfree
+--enable-opengl
+--enable-libdrm
+--enable-version3
