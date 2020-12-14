@@ -69,9 +69,10 @@ Build-Depends:
  python-docutils | python3-docutils,
  x11proto-core-dev,
  yasm,
- zlib1g-dev
+ zlib1g-dev,
+ librockchip-mpp1
 
-Package: mpv
+Package: mpv-legacy
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Recommends:
@@ -79,6 +80,8 @@ Recommends:
  i965-va-driver | libva-intel-vaapi-driver | va-driver,
  mesa-vdpau-drivers | nvidia-vdpau-driver | nvidia-driver-binary | nvidia-current | vdpau-driver
 Suggests: libaacs0
+Breaks: mpv
+Provides: mpv (= 30.1+git20201213-0armbian1)
 Description: mplayer/mplayer2 based video player
  MPV is a versatile CLI movie player, based on mplayer and mplayer2.
  .
