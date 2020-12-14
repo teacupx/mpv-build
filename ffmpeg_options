@@ -4,3 +4,5 @@
 --enable-libdrm
 --enable-version3
 --enable-v4l2-m2m
+--enable-neon
+
